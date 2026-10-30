@@ -323,10 +323,8 @@ TEST(UiTest, TimestampedGraph)
 TEST(UiTest, MeasuredAlignment)
 {
     Fixture fixture;
-    View* applicationTitle = fixture.view("applicationTitle");
     View* pageTitle = fixture.view("pageTitle");
-    ASSERT_TRUE(applicationTitle && pageTitle);
-    EXPECT_EQ(windowRect(applicationTitle).y, windowRect(pageTitle).y);
+    ASSERT_TRUE(pageTitle);
     EXPECT_EQ(std::lround(windowRect(pageTitle).x), 252);
 
     View* search = fixture.view("processSearch");

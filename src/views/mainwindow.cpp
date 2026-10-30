@@ -53,11 +53,9 @@ class HeaderContent : public View
 public:
     explicit HeaderContent(WindowHeader* header)
         : m_header(header)
-        , m_applicationTitle(addLabel(this, tr("System Monitor"), 11))
         , m_pageTitle(addLabel(this, tr(kPageTitles[0]), 11))
         , m_interval(addChild<HeaderButton>("menu", 32))
     {
-        m_applicationTitle->setName("applicationTitle");
         m_pageTitle->setName("pageTitle");
         m_interval->setName("refreshInterval");
     }
@@ -71,25 +69,23 @@ protected:
         const Theme& theme = Theme::current();
         const Window* window = this->window();
         const Color color = !window || window->isActive() ? theme.text : theme.disabledText;
-        const TextMetrics metrics = textMetrics(m_applicationTitle);
+        const TextMetrics metrics = textMetrics(m_pageTitle);
         const double top = snapToDevice(this, kHeaderBaseline - metrics.ascent);
         // The window buttons centre on the title's capitals.
         const double capCenter = snapToDevice(this, snapToDevice(this, kHeaderBaseline) - metrics.capHeight / 2);
         const double buttonTop = capCenter - 16;
         m_header->setButtonMargin(buttonTop);
 
-        m_applicationTitle->setColor(color);
-        m_applicationTitle->setGeometry({20, top, kSidebarWidth - 20, metrics.lineHeight});
-        const double right = geometry().width;
+        // The end margin matches the window buttons' start margin.
+        const double right = geometry().width - buttonTop;
         m_interval->setGeometry({right - 32, buttonTop, 32, 32});
-        const double pageX = 20 + kSidebarWidth - 20 + 12;
+        const double pageX = kSidebarWidth + 12;
         m_pageTitle->setColor(color);
         m_pageTitle->setGeometry({pageX, top, std::max(0.0, right - 32 - 12 - pageX), metrics.lineHeight});
     }
 
 private:
     WindowHeader* m_header;
-    Label* m_applicationTitle;
     Label* m_pageTitle;
     HeaderButton* m_interval;
 };
@@ -102,6 +98,7 @@ public:
     {
         header = addChild<WindowHeader>(kHeaderHeight);
         content = header->setContent<HeaderContent>(header);
+        header->setContentUnderButtons(true);
 
         sidebar = addChild<ScrollView>();
         auto* column = sidebar->setContent<Column>();
