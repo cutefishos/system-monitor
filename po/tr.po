@@ -1,0 +1,612 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cutefish-system-monitor\n"
+"Report-Msgid-Bugs-To: https://github.com/cutefishos\n"
+"POT-Creation-Date: 2026-11-19 20:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. TRANSLATORS: a browser's helper process, such as "Chromium (Renderer)".
+#: src/monitor.cpp src/processlist.cpp
+#, python-brace-format
+msgid "{name} ({helper})"
+msgstr "{name} ({helper})"
+
+#: src/monitor.cpp
+msgid "The process has already exited."
+msgstr "İşlemden zaten çıkıldı."
+
+#: src/monitor.cpp
+msgid "The application has already quit."
+msgstr "Uygulama zaten kapandı."
+
+#: src/monitor.cpp
+msgid "This application cannot be quit here."
+msgstr "Bu uygulamadan burada çıkılamaz."
+
+#: src/monitor.cpp
+msgid "This process cannot be ended here."
+msgstr "Bu süreç burada sonlandırılamaz."
+
+#: src/monitor.cpp
+#, python-brace-format
+msgid "Unable to open the process: {error}"
+msgstr "İşlem açılamıyor: {error}"
+
+#: src/monitor.cpp
+msgid "You can only end your own processes."
+msgstr "Yalnızca kendi süreçlerinizi sonlandırabilirsiniz."
+
+#: src/monitor.cpp
+#, python-brace-format
+msgid "Unable to end the process: {error}"
+msgstr "İşlem sonlandırılamıyor: {error}"
+
+#: src/monitor.cpp
+msgid "B"
+msgstr "B"
+
+#: src/monitor.cpp
+msgid "KiB"
+msgstr "KiB"
+
+#: src/monitor.cpp
+msgid "MiB"
+msgstr "MIB"
+
+#: src/monitor.cpp
+msgid "GiB"
+msgstr "GiB"
+
+#: src/monitor.cpp
+msgid "TiB"
+msgstr "TiB"
+
+#. TRANSLATORS: a size, such as "1.5 MiB".
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{value} {unit}"
+msgstr "{value} {unit}"
+
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{size}/s"
+msgstr "{size}/s"
+
+#. TRANSLATORS: days and hours, such as "3 d 4 h".
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{days} d {hours} h"
+msgstr "{days} gün {hours} saat"
+
+#. TRANSLATORS: hours and minutes, such as "2 h 5 min".
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{hours} h {minutes} min"
+msgstr "{hours} sa {minutes} dk"
+
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{minutes} min"
+msgstr "{minutes} dk."
+
+#: src/monitor.cpp
+#, python-brace-format
+msgid "{seconds} s"
+msgstr "{seconds} sn"
+
+#: src/procreader.cpp
+msgid "Running"
+msgstr "Çalışıyor"
+
+#: src/procreader.cpp
+msgid "Sleeping"
+msgstr "Uyuyor"
+
+#: src/procreader.cpp
+msgid "Waiting for I/O"
+msgstr "G/Ç bekleniyor"
+
+#: src/procreader.cpp
+msgid "Stopped"
+msgstr "Durduruldu"
+
+#: src/procreader.cpp
+msgid "Zombie"
+msgstr "Zombi"
+
+#: src/procreader.cpp
+msgid "Renderer"
+msgstr "Oluşturucu"
+
+#: src/procreader.cpp
+msgid "Extension"
+msgstr "Eklenti"
+
+#: src/procreader.cpp src/views/mainwindow.cpp
+msgid "GPU"
+msgstr "GPU"
+
+#: src/procreader.cpp
+msgid "Zygote"
+msgstr "Zigot"
+
+#: src/procreader.cpp src/views/mainwindow.cpp
+msgid "Network"
+msgstr "Ağ"
+
+#: src/procreader.cpp
+msgid "Audio"
+msgstr "Ses"
+
+#: src/procreader.cpp src/views/resourcepage.cpp
+msgid "Storage"
+msgstr "Depolama"
+
+#: src/procreader.cpp
+msgid "Video Capture"
+msgstr "Video Yakalama"
+
+#: src/procreader.cpp
+msgid "Utility"
+msgstr "Yardımcı Program"
+
+#: src/procreader.cpp
+msgid "System information is unavailable."
+msgstr "Sistem bilgileri mevcut değil."
+
+#: src/views/chartcard.cpp
+msgid "Now"
+msgstr "Şimdi"
+
+#: src/views/mainwindow.cpp src/views/summarycard.cpp
+msgid "Processes"
+msgstr "Süreçler"
+
+#: src/views/mainwindow.cpp src/views/processdetails.cpp
+#: src/views/processespage.cpp
+msgid "CPU"
+msgstr "İşlemci"
+
+#: src/views/mainwindow.cpp src/views/processdetails.cpp
+#: src/views/processespage.cpp
+msgid "Memory"
+msgstr "Bellek"
+
+#: src/views/mainwindow.cpp
+msgid "Disk"
+msgstr "Disk"
+
+#: src/views/mainwindow.cpp cutefish-system-monitor.desktop
+msgid "System Monitor"
+msgstr "Sistem Monitörü"
+
+#: src/views/mainwindow.cpp
+msgid "Details"
+msgstr "Detaylar"
+
+#: src/views/mainwindow.cpp
+msgid "Copy Process ID"
+msgstr "İşlem Kimliğini Kopyala"
+
+#: src/views/mainwindow.cpp
+msgid "Quit"
+msgstr "Çıkış yapmak"
+
+#: src/views/mainwindow.cpp
+msgid "Force Quit"
+msgstr "Çıkmaya Zorla"
+
+#: src/views/mainwindow.cpp
+msgid "About System Monitor"
+msgstr "Sistem Monitörü Hakkında"
+
+#: src/views/mainwindow.cpp
+msgid "Hide System Monitor"
+msgstr "Sistem Monitörünü Gizle"
+
+#: src/views/mainwindow.cpp
+msgid "Quit System Monitor"
+msgstr "Sistem Monitörü'nden çık"
+
+#: src/views/mainwindow.cpp
+msgid "Edit"
+msgstr "Düzenle"
+
+#: src/views/mainwindow.cpp
+msgid "Find"
+msgstr "Bul"
+
+#: src/views/mainwindow.cpp
+msgid "View"
+msgstr "Görümüm"
+
+#: src/views/mainwindow.cpp
+msgid "Update Every Second"
+msgstr "Her Saniyede Bir Güncelle"
+
+#: src/views/mainwindow.cpp
+msgid "Update Every 2 Seconds"
+msgstr "Her 2 Saniyede Bir Güncelleme"
+
+#: src/views/mainwindow.cpp
+msgid "Update Every 5 Seconds"
+msgstr "Her 5 Saniyede Bir Güncelleme"
+
+#: src/views/mainwindow.cpp
+msgid "Window"
+msgstr "Pencere"
+
+#: src/views/mainwindow.cpp
+msgid "Minimize"
+msgstr "Küçült"
+
+#: src/views/mainwindow.cpp
+msgid "Zoom"
+msgstr "Yakınlaştır"
+
+#: src/views/mainwindow.cpp
+msgid "Shows what your computer is doing."
+msgstr "Bilgisayarınızın ne yaptığını gösterir."
+
+#: src/views/mainwindow.cpp
+#, python-brace-format
+msgid "Force quit {name}?"
+msgstr "{name} sonlandırılmaya zorlansın mı?"
+
+#: src/views/mainwindow.cpp
+#, python-brace-format
+msgid "Quit {name}?"
+msgstr "{name}'dan çıkılsın mı?"
+
+#: src/views/mainwindow.cpp
+msgid "All of its processes will stop immediately. Unsaved work may be lost."
+msgstr ""
+"Tüm işlemleri anında duracaktır. Kaydedilmemiş çalışmalar kaybolabilir."
+
+#: src/views/mainwindow.cpp
+msgid "The application will be asked to quit. Unsaved work may be lost."
+msgstr ""
+"Uygulamadan çıkmanız istenecek. Kaydedilmemiş çalışmalar kaybolabilir."
+
+#: src/views/mainwindow.cpp
+msgid "The process will stop immediately. Unsaved work may be lost."
+msgstr "İşlem hemen duracaktır. Kaydedilmemiş çalışmalar kaybolabilir."
+
+#: src/views/mainwindow.cpp
+msgid "The process will be asked to quit. Unsaved work may be lost."
+msgstr ""
+"İşlemden çıkılması istenecektir. Kaydedilmemiş çalışmalar kaybolabilir."
+
+#: src/views/mainwindow.cpp src/views/summarycard.cpp
+msgid "Collecting data…"
+msgstr "Veri toplanıyor…"
+
+#: src/views/mainwindow.cpp
+#, python-brace-format
+msgid "{n} logical processor"
+msgid_plural "{n} logical processors"
+msgstr[0] "{n} mantıksal işlemci"
+msgstr[1] "{n} mantıksal işlemciler"
+
+#: src/views/mainwindow.cpp
+#, python-brace-format
+msgid "Write {rate}"
+msgstr "{rate} yaz"
+
+#: src/views/processdetails.cpp
+msgid "Command"
+msgstr "Komut"
+
+#: src/views/processdetails.cpp src/views/processespage.cpp
+msgid "Name"
+msgstr "Ad"
+
+#: src/views/processdetails.cpp src/views/processespage.cpp
+msgid "PID"
+msgstr "PID"
+
+#: src/views/processdetails.cpp
+msgid "Resident memory"
+msgstr "Yerleşik bellek"
+
+#: src/views/processdetails.cpp
+msgid "Disk read"
+msgstr "Disk okuma"
+
+#: src/views/processdetails.cpp
+msgid "Disk write"
+msgstr "Diske yazma"
+
+#: src/views/processdetails.cpp
+msgid "Threads"
+msgstr "İş parçacıkları"
+
+#: src/views/processdetails.cpp
+msgid "Running time"
+msgstr "Çalışma süresi"
+
+#: src/views/processdetails.cpp
+msgid "Open files"
+msgstr "Açık dosyalar"
+
+#: src/views/processdetails.cpp
+msgid "Parent process"
+msgstr "Ana süreç"
+
+#: src/views/processdetails.cpp
+msgid "Nice value"
+msgstr "Öncelik değeri"
+
+#: src/views/processdetails.cpp
+msgid "Unit"
+msgstr "Birim"
+
+#: src/views/processdetails.cpp
+msgid "Executable"
+msgstr "Yürütülebilir dosya"
+
+#: src/views/processdetails.cpp
+msgid "Application quit"
+msgstr "Uygulamadan çık"
+
+#: src/views/processdetails.cpp
+msgid "Process exited"
+msgstr "İşlemden çıkıldı"
+
+#: src/views/processdetails.cpp
+#, python-brace-format
+msgid "PID {pid}"
+msgstr "PID {pid}"
+
+#: src/views/processdetails.cpp
+#, python-brace-format
+msgid "{count} process"
+msgid_plural "{count} processes"
+msgstr[0] "{count} süreci"
+msgstr[1] "{count} süreçleri"
+
+#. TRANSLATORS: a disk rate and the amount since the process started, such as
+#. "1.2 MiB/s, 340.5 MiB in total".
+#: src/views/processdetails.cpp
+#, python-brace-format
+msgid "{rate}, {total} in total"
+msgstr "Toplam {rate}, {total}"
+
+#: src/views/processdetails.cpp
+#, python-brace-format
+msgid "{name} ({pid})"
+msgstr "{name} ({pid})"
+
+#. TRANSLATORS: how long a process has run and when it started, such as "2 h 5
+#. min, since 14:03".
+#: src/views/processdetails.cpp
+#, python-brace-format
+msgid "{duration}, since {time}"
+msgstr "{duration}, {time}'den beri"
+
+#: src/views/processdetails.cpp
+msgid "Application Details"
+msgstr "Uygulama Ayrıntıları"
+
+#: src/views/processdetails.cpp
+msgid "Process Details"
+msgstr "Süreç Detayları"
+
+#: src/views/processespage.cpp src/views/resourcepage.cpp
+msgid "Read"
+msgstr "Okuma"
+
+#: src/views/processespage.cpp src/views/resourcepage.cpp
+msgid "Write"
+msgstr "Yazma"
+
+#: src/views/processespage.cpp
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: src/views/processespage.cpp
+msgid "My Processes"
+msgstr "Süreçlerim"
+
+#: src/views/processespage.cpp
+msgid "All Processes"
+msgstr "Tüm Süreçler"
+
+#: src/views/processespage.cpp
+msgid "Search processes"
+msgstr "Arama süreçleri"
+
+#: src/views/processespage.cpp
+msgid "No applications found"
+msgstr "Hiçbir uygulama bulunamadı"
+
+#: src/views/processespage.cpp
+msgid "No processes found"
+msgstr "Hiçbir işlem bulunamadı"
+
+#: src/views/processespage.cpp
+msgid "Try a different name, user, or process ID."
+msgstr "Farklı bir ad, kullanıcı veya işlem kimliği deneyin."
+
+#: src/views/resourcepage.cpp
+msgid "Logical processors"
+msgstr "Mantıksal işlemciler"
+
+#: src/views/resourcepage.cpp
+msgid "In use"
+msgstr "Kullanımda"
+
+#: src/views/resourcepage.cpp
+msgid "Available"
+msgstr "Mevcut"
+
+#: src/views/resourcepage.cpp
+msgid "Cached"
+msgstr "Önbelleğe alındı"
+
+#: src/views/resourcepage.cpp
+msgid "Total memory"
+msgstr "Toplam bellek"
+
+#: src/views/resourcepage.cpp
+msgid "Swap"
+msgstr "Takas"
+
+#: src/views/resourcepage.cpp
+msgid "Download"
+msgstr "İndirme"
+
+#: src/views/resourcepage.cpp
+msgid "Upload"
+msgstr "Yükleme"
+
+#: src/views/resourcepage.cpp
+msgid "Total received"
+msgstr "Toplam alınan"
+
+#: src/views/resourcepage.cpp
+msgid "Total sent"
+msgstr "Toplam gönderilen"
+
+#: src/views/resourcepage.cpp
+msgid "Network interfaces"
+msgstr "Ağ arayüzleri"
+
+#: src/views/resourcepage.cpp
+msgid "State"
+msgstr "Durum"
+
+#: src/views/resourcepage.cpp
+msgid "Hardware address"
+msgstr "Donanım adresi"
+
+#: src/views/resourcepage.cpp
+msgid "Device"
+msgstr "Cihaz"
+
+#: src/views/resourcepage.cpp
+msgid "Capacity"
+msgstr "Kapasite"
+
+#: src/views/resourcepage.cpp
+msgid "Used"
+msgstr "Kullanılan"
+
+#: src/views/resourcepage.cpp
+msgid "File system"
+msgstr "Dosya sistemi"
+
+#: src/views/resourcepage.cpp
+msgid "Driver"
+msgstr "Sürücü"
+
+#: src/views/resourcepage.cpp
+msgid "Activity"
+msgstr "Etkinlik"
+
+#: src/views/resourcepage.cpp
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+#: src/views/resourcepage.cpp
+msgid "Clock speed"
+msgstr "Saat hızı"
+
+#: src/views/resourcepage.cpp
+msgid "Video memory"
+msgstr "Video belleği"
+
+#: src/views/resourcepage.cpp
+msgid "Processor activity"
+msgstr "İşlemci etkinliği"
+
+#: src/views/resourcepage.cpp
+msgid "Memory usage"
+msgstr "Bellek kullanımı"
+
+#: src/views/resourcepage.cpp
+msgid "Network activity"
+msgstr "Ağ etkinliği"
+
+#: src/views/resourcepage.cpp
+msgid "Disk activity"
+msgstr "Disk etkinliği"
+
+#: src/views/resourcepage.cpp
+msgid "Graphics activity"
+msgstr "Grafik etkinliği"
+
+#: src/views/resourcepage.cpp
+msgid "Graphics temperature"
+msgstr "Grafik sıcaklığı"
+
+#: src/views/resourcepage.cpp
+#, python-brace-format
+msgid "{used} of {total} in use"
+msgstr "{used} / {total} kullanımda"
+
+#: src/views/resourcepage.cpp
+msgid "Physical network interfaces"
+msgstr "Fiziksel ağ arayüzleri"
+
+#: src/views/resourcepage.cpp
+msgid "Physical disks"
+msgstr "Fiziksel diskler"
+
+#: src/views/resourcepage.cpp
+#, python-brace-format
+msgid "{n} second"
+msgid_plural "{n} seconds"
+msgstr[0] "{n} saniye"
+msgstr[1] "{n} saniye"
+
+#: src/views/resourcepage.cpp
+#, python-brace-format
+msgid "CPU {number}"
+msgstr "CPU {number}"
+
+#: src/views/resourcepage.cpp
+msgid "Not configured"
+msgstr "Yapılandırılmadı"
+
+#: src/views/resourcepage.cpp
+msgid "Connected"
+msgstr "Bağlı"
+
+#: src/views/resourcepage.cpp
+msgid "Disconnected"
+msgstr "Bağlantı kesildi"
+
+#: src/views/resourcepage.cpp
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: src/views/resourcepage.cpp
+#, python-brace-format
+msgid "{used} of {total}"
+msgstr "{used} / {total}"
+
+#: src/views/resourcepage.cpp
+msgid "Active"
+msgstr "Aktif"
+
+#: src/views/resourcepage.cpp
+msgid "Powered off"
+msgstr "Kapalı"
+
+#: cutefish-system-monitor.desktop
+msgid "View resource usage and manage running processes"
+msgstr "Kaynak kullanımını görüntüleyin ve çalışan süreçleri yönetin"
+
+#: cutefish-system-monitor.desktop
+msgid "CPU;Memory;Network;Disk;Processes;"
+msgstr "CPU;Bellek;Ağ;Disk;İşlemler;"
